@@ -1,5 +1,6 @@
 # This program takes .csv files of target sentences and fillers 
 # and generates 24 lists for 24 subjects.
+# Created by Glynis MacMillan on 7/22/2013, based on a script by Cybelle Smith
 
 library(gdata) # allows us to use trim function
 library(stringr) # allows us to use str_split
