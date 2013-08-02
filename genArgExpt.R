@@ -1,6 +1,6 @@
 # This program takes .csv files of target sentences and fillers 
 # and generates 24 lists for 24 subjects.
-# Created by G. MacMillan on 7/22/2013, based on a script by C. Smith
+# Created by Glynis MacMillan on 6/29/2013, based on a script by Cybelle Smith
 
 library(gdata) # allows us to use trim function
 outputfilepath <- "~/Dropbox/Sandcastle/RScripts/";
