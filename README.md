@@ -29,7 +29,7 @@ This function actually randomizes items in a vector.  This function is called in
 
 Pseudorandomize (psuedorandomize)
 ===================
-This function pseudo-randomzies the items.  It is complicated ************
+This function pseudo-randomzies the items.  
 
 
 Generate Subject Files (generate.subj.files)
