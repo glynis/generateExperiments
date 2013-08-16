@@ -1,7 +1,7 @@
 generateExperiments
 ===================
 
-README is in the process of being written!  Please excuse the incomplete sections.
+README is in the process of being written...  Please excuse any incomplete sections!
 
 Target Sentences
 ===================
@@ -45,6 +45,8 @@ Takes
 
 Get blocks (getblocks)
 ===================
+
+Writes block information to "block" column.  For experimental sentences, the block index is used to keep similar sentence frames in separate blocks.
 
 Randomize (randomize)
 ===================
