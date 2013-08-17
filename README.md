@@ -29,7 +29,7 @@ This function actually randomizes items in a vector.  This function is called in
 
 Pseudorandomize (psuedorandomize)
 ===================
-This function pseudo-randomzies the items.  
+This function pseudo-randomzies the items.  ...to be filled in with greater detail...
 
 
 Generate Subject Files (generate.subj.files)
@@ -41,7 +41,8 @@ Called by catalyst for loop at the end of script.
 
 Get megalist (getmegalist)
 ===================
-Takes 
+
+Generates "megalist" 24 times (once for each subject).  
 
 Get blocks (getblocks)
 ===================
