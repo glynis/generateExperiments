@@ -64,22 +64,29 @@ Write blocks (writeblock)
 
 Takes megalist, block.
 
-Calls ...
+Calls addfill, addtarg, megalist.  
 
-Generates lists of items with triggers included, and writes them into blocks according to the block index.  Also inserts plausibility question after each item.  
+Generates lists of items with triggers included, and writes them into blocks according to the block index.  Also inserts plausibility question after each item.  Because it calls addTarg and addFill, the sentences printed in the block#.txt files (where # = block number) include triggers and are ready to be inputted to MATLAB.  
 
 Add target sentences (addtarg)
 ===================
+
+Adds triggers to the target sentences.  The critical word in a target sentence will always have 6 as its final digit.  The tens place can be 1-4 and marks condition.  Words in the regions near the critical word will be in numerical order leading up to and following the 6, i.e. which 41 patient 42 the 43 doctor 44 had 45 cured 46 of 47 the 48 disease 49 40.  The whole number 40 marks the end of a sentence, while 190 and 191 mark questions (1 = should be answered with yes, 0 = should be answered with no). Non-critical words will be marked with 1.
 
 
 Add fillers (addfill)
 ===================
 
-Interweave triggers (interweaveT
+Adds triggers to the filler sentences.  The critical word in a target sentence will always have 6 as its final digit.  The tens place can be 5-8 and marks condition.  Words in the regions near the critical word will be in numerical order leading up to and following the 6, i.e. He 1 spread 71 his 72 toast 73 with 74 warm 75 socks 76 and 77 jam 78 70.  The whole number 40 marks the end of a sentence, while 190 and 191 mark questions (1 = should be answered with yes, 0 = should be answered with no). Non-critical words will be marked with 1.
+
+
+Interweave triggers (interweaveT)
 ===================
 
+Creates matricies to add triggers in between the words in target and filler sentences.  
 
-Catalyst for loop 
+
+for loop 
 ===================
 
 
