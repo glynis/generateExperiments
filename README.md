@@ -29,14 +29,14 @@ This function actually randomizes items in a vector.  This function is called in
 
 Pseudorandomize (psuedorandomize)
 ===================
-This function pseudo-randomzies the items.  ...to be filled in with greater detail...
+This function pseudo-randomzies the items.  Pseudorandomizing creates a mostly random list, but ensures items of the same type do not appear many times in a row.  Pseudorandomizing first randomzies the items within blocks, and then passes through the list looking for 2 or more items of the same _ and 3 or more items of the same _.  If too many of one kind of item are in a row, the item is moved to the bottom of the list.  This process is continued until the end of the block is reached, and repeated for all five blocks.
 
 
 Generate Subject Files (generate.subj.files)
 ===================
 This function generates subject files using megalist (created by calling getmegalist) and calls writefiles to write the actual .txt files.
 
-Called by catalyst for loop at the end of script.
+Called by for loop at the end of script.
 
 
 Get megalist (getmegalist)
@@ -52,11 +52,21 @@ Writes block information to "block" column.  For experimental sentences, the blo
 Randomize (randomize)
 ===================
 
+Calls jumble and pseudorandomize.  Pseudorandomizes items with a block and randomizes the blocks themselves.
+
 Write files (write files)
 ===================
 
+Takes subject number and megalist, writes list of files for MATLAB and PsychToolbox to call.
+
 Write blocks (writeblock)
 ===================
+
+Takes megalist, block.
+
+Calls ...
+
+Generates lists of items with triggers included, and writes them into blocks according to the block index.  Also inserts plausibility question after each item.  
 
 Add target sentences (addtarg)
 ===================
